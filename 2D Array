@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {   
+int rows, cols;
+    // Get the dimensions of the 2D array   
+    printf("Enter the number of rows: ");   
+    scanf("%d", &rows);
+    printf("Enter the number of columns: ");   
+     scanf("%d", &cols);
+    // Declare the 2D array   
+      int arr[rows][cols];
+    // Input elements from the user   
+    printf("Enter elements of the 2D array:\n");    
+     for (int i = 0; i < rows; i++) {       
+     for (int j = 0; j < cols; j++) {      
+      printf("Enter element at position (%d, %d): ", i + 1, j + 1);    
+     scanf("%d", &arr[i][j]);       
+    }
+ }
+    // Display the 2D array  
+   printf("Entered 2D array:\n");
+    for (int i = 0; i < rows; i++) {   
+     for (int j = 0; j < cols; j++) {       
+      printf("%d ", arr[i][j]);        }       
+       printf("\n");   
+     }
+}
